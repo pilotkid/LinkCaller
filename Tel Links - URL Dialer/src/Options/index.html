@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+
+        #mainPopup {
+            padding: 10px;
+            height: 250px;
+            width: 400px;
+            font-family: Helvetica, Ubuntu, Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+    </style>
+    <title>Phone URL Settings</title>
+    <script src="../../js/jquery/jquery.js"></script>
+</head>
+<body>
+    <div id="mainPopup">
+        <center>
+            <h1>Phone URL settings!</h1>
+        </center>
+
+        <b>URL to make call to</b><br />
+        <input type="url" id="url" name="url" maxlength="1024" style="width:100%;" />
+        <p>
+            This is where you can input your url that you wish to connect the call through
+            you can use the <b>{phone}</b> switch in your url to input the clicked phone number
+            for example the phone number clicked is 719-550-2230. And your url is
+            http://TestPhone.com/Call.php?to={phone}&from=112. When you click the call button
+            it will call the url http://TestPhone.com/Call.php?to=7195502230&from=112.
+        </p>
+        
+        <center>
+            <button id="save">Save</button>
+            <br />
+            <div id="status" style="color:green;font-weight:400;font-size:medium;align-content:center;"></div>
+        </center>
+        <script src="options.js"></script>
+        </div>
+</body>
+</html>
