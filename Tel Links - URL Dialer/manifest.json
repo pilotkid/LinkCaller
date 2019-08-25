@@ -1,6 +1,6 @@
 {
   "name": "Tel Link - URL Caller",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "This allows you to place a call via a url. This is typically used with FreePBX with a Call.php script",
   "homepage_url": "http://extensionizr.com",

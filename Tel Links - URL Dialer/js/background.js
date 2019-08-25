@@ -4,7 +4,7 @@ $(document).ready(function ()
     //ADD A CLICK CALL FOR ALL TELEPHONE LINKS
     $('a[href^="tel:"]').click(function (e) {
 
-        var PhoneNumber = $(this).attr("href").replace("tel:","");
+        var PhoneNumber = $(this).attr("href").replace("tel:","").replace('-','').replace('(','').replace(')','');
 
         PlaceCall(PhoneNumber);
     });
